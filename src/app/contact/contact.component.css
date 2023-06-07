@@ -1,0 +1,311 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 12pt;
+    font-style: normal;
+    text-decoration: none;
+}
+
+
+/* AQUÍ VA EL MENÚ PRINCIPAL */
+.contenedor-principal{
+    height: 279px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.barra-nav{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    background-color: white; 
+}
+
+.barra-nav a{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.barra-nav-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.barra-nav-left{
+    display: flex;
+    flex-basis: 30%;    
+    align-items: center;
+    justify-content:center;
+    /* background-color:salmon; */
+}
+
+.barra-nav-center{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content:center;
+    /* background-color:orange; */
+}
+
+.barra-nav-right{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content:center;
+    /* background-color:firebrick; */
+}
+
+.barra-nav-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-end;
+    /* background-color:blue; */
+}
+
+.barra-nav-left ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.barra-nav-left ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.barra-nav-center img{
+    height: 30px;
+}
+
+.barra-nav-right img{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.barra-nav-right ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* AQUÍ COMIENZA EL CONTACTO */
+.contacto{
+    height: 750px;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    /* background-color: aquamarine; */
+    background-image: url(../../assets/imagenes/bg-amenti.png);
+    background-position: right;
+    background-size: cover;
+}
+
+.titulo{
+    height: 40px;
+    display:block;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+}
+
+.titulo h1{
+    color: white;
+    font-size: 30pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.contacto2{
+    height: 750px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 5px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+  /* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: pink;
+    color: white;
+    padding: 12px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    font-size: 17px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: italic;
+}
+
+  /* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: salmon;
+}
+
+  /* Add a background color and some padding around the form */
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* AQUÍ COMIENZA EL FOOTER */
+.footer{
+    height: 250px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:rgb(234, 234, 247); 
+}
+
+.footer h1{
+    font-size: 12pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+}
+
+.footer ul{
+    margin-left: 30px;
+}
+
+.footer a{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: gray;
+    text-decoration: none;
+}
+
+.footer h2{
+    font-size: 12pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.footer p{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    text-align: left;
+}
+
+.footer img{
+    height: 20px;
+}
+
+.footer-margin-left{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.footer-left{
+    flex-basis: 30%;
+    /* background-color: olivedrab; */
+}
+
+.footer-center{
+    flex-basis: 30%;
+    /* background-color:palegoldenrod; */
+}
+
+.footer-right{
+    flex-basis: 30%;
+    /* background-color: pink; */
+}
+
+.footer-right img{
+    margin-left: 150px;
+}
+
+/* AQUÍ VA EL LOGIN */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    border: 3px solid grey;
+    z-index: 9;
+    border-radius: 10px;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: pink;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.form-container .cancel {
+    background-color: rgb(223, 223, 247); 
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 700px)  {
+    header {
+    max-width: 400px;
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1080px)  {
+    header {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 5000px)  {
+    header {
+        max-width: 1100px;
+    }
+}

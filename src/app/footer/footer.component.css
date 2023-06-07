@@ -1,0 +1,726 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 12pt;
+    font-style: normal;
+    text-decoration: none;
+}
+
+/* AQUÍ VA EL MENÚ PRINCIPAL */
+.barra-nav{
+    height: 60px;
+    display: flex;
+    width: 100%;
+    text-decoration: none;
+    /* background-color: white; */
+}
+
+.barra-nav a{
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: normal;
+    color: black;
+    text-decoration: none;
+}
+
+.barra-nav-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.barra-nav-left{
+    display: flex;
+    flex-basis: 30%;    
+    align-items: center;
+    justify-content:center;
+    /* background-color:salmon; */
+}
+
+.barra-nav-center{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content:center;
+    /* background-color:orange; */
+}
+
+.barra-nav-right{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    justify-content:center;
+    /* background-color:firebrick; */
+}
+
+.barra-nav-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-end;
+    /* background-color:blue; */
+}
+
+.barra-nav-left ul{
+    list-style: none;
+    margin-left: 20px;
+}
+
+.barra-nav-left ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.barra-nav-center img{
+    height: 30px;
+}
+
+.barra-nav-right img{
+    height: 20px;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.barra-nav-right ul li{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/* AQUÍ COMIENZA LA PRIMERA SECCIÓN */
+
+.contenedor-principal{
+    height: 800px;
+    display: flex;
+    width: 100%;
+    /* background-color: aquamarine; */
+    background-image: url(../../assets/imagenes/PRINCIPAL.png);
+    background-position: right;
+    background-size: cover;
+}
+
+.contenedor-principal-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.contenedor-principal-left{
+    display: flex;
+    flex-basis: 60%;
+    justify-content: flex-start;
+    /* background-color: red; */
+    align-items: flex-end;
+}
+
+.contenedor-principal-frase{
+    flex-basis: 50%;
+    height: 30%;
+    margin-bottom: 40px;
+    /* background-color: green; */
+}
+
+.contenedor-principal-frase p{
+    font-size: 35pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+    color: grey;
+}
+
+.contenedor-principal-right{
+    text-align: center;
+    position:absolute;
+    top: 15%;
+    left: 60%;
+    /* background-color: greenyellow; */
+}
+
+.contenedor-principal-right h1{
+    font-size: 55pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+}
+
+.contenedor-principal-right h2{
+    font-size: 25pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-align: left;
+    font-style: bold;
+    margin-left: 60px;
+}
+
+.contenedor-principal-right p{
+    text-align: left;
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: grey;
+}
+
+.button1 {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color: pink;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.contenedor-principal-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-end;
+    /* background-color:blue; */
+}
+
+/* SLIDESHOW DE PRODUCTOS */
+.slideshow-container {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next {
+    right: 120px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.prev {
+    left: 120px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color:salmon;
+}
+
+
+/* AQUÍ COMIENZA LA SECCIÓN DE PRODUCTOS */
+.productos{
+    display: grid;
+    height: 913px;
+    width: 100%; 
+    /* background-color: black; */
+    background-image: url(../../assets/imagenes/PRODUCTOS.png);
+    background-position: right;
+    background-size: cover;
+}
+
+.productos-titulo{
+    height: 166px;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    /* background-color: burlywood; */
+}
+
+.productos-columnas{
+    height: 581px;
+    width: 100%;
+    display: flex;
+    /* background-color: gold; */
+}
+
+.productos-columnas-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+} 
+
+.productos-columna{
+    height: 581px;
+    width: 30%;
+    display: flex;
+    /* background-color:red; */
+}
+
+.productos-columnas-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color:blue; */
+}  
+
+.productos-bottom{
+    height: 166px;
+    width: 100%;
+    display: grid;
+    /* background-color:darkblue; */
+}
+
+.card {
+    width: 100%;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.container {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: 0.3s;
+    padding: 2px 16px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: justify;
+}
+
+.container:hover {
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2);
+}
+
+.container h1{
+    font-size: 20pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+}
+
+.container p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: grey;
+}
+
+.button2 {
+    background-color: pink;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 10px 90px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 12pt;
+    font-style: italic;
+    align-self: center;
+}
+
+/* AQUÍ COMIENZA LA SECCIÓN DE HOMBRES */
+.contenedor-hombres{
+    height: 850px;
+    display: flex;
+    width: 100%;
+    background-image: url(../../assets/imagenes/HOMBRES.png);
+    background-position: right;
+    background-size: cover;
+    /* background-color: aquamarine; */
+}
+
+.contenedor-hombres-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.contenedor-hombres-left{
+    text-align: center;
+    margin-top: 10%;
+    left: 10%;
+    position: static;
+}
+
+
+.contenedor-hombres-left h2{
+    font-size: 25pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    text-align: left;
+    font-style: bold;
+    margin-left: 60px;
+    color: white;
+}
+
+.contenedor-hombres-left p{
+    text-align: left;
+    margin-left: 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: whitesmoke;
+}
+
+.button3 {
+    background-color: rgb(255, 255, 255);
+    border: none;
+    color:rgb(43, 43, 88);
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-size: 12pt;
+    font-style: italic;
+}
+
+.contenedor-hombres-right{
+    display: flex;
+    flex-basis: 60%;
+    justify-content: flex-end;
+    /* background-color: greenyellow; */
+}
+
+.contenedor-hombres-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-end;
+    /* background-color:blue; */
+}
+
+/* SLIDESHOW DE PRODUCTOS HOMBRES */
+.slideshow-container2 {
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+}
+
+.mySlides2 {
+    display: none;
+}
+
+.prev2, .next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
+}
+
+.next2 {
+    right: 80px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.prev2 {
+    left: 80px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.prev2:hover, .next2:hover {
+    background-color: rgb(24, 24, 66);
+}
+
+/* AQUÍ COMIENZA LA SECCIÓN DE INFORMACIÓN */
+.contenedor-info{
+    height: 850px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    /* background-color: aquamarine; */
+}
+
+.contenedor-info-margin-left{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.contenedor-info-left{
+    display: flex;
+    flex-basis: 30%;
+    align-items: center;
+    /* background-color:orange; */
+}
+
+.contenedor-info-center{
+    display:-ms-grid;
+    flex-basis: 30%;
+    align-items:center;
+    /* background-color:blueviolet; */
+}
+
+.contenedor-info-center h1{
+    font-size: 35pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+}
+
+.contenedor-info-center p{
+    text-align:justify;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+}
+
+.contenedor-info-center img{
+    width: 100%;
+}
+
+.contenedor-info-right{
+    display: flex;
+    flex-basis: 30%;
+    justify-content: flex-end;
+    align-items: center;
+    /* background-color: indigo; */
+}
+
+.contenedor-info-margin-right{
+    display: flex;
+    flex-basis: 5%;
+    justify-content: flex-end;
+    /* background-color:blue; */
+}
+
+/* AQUÍ COMIENZA EL FOOTER */
+.footer{
+    height: 250px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    background-color:rgb(234, 234, 247); 
+}
+
+.footer h1{
+    font-size: 12pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+    font-style: bold;
+}
+
+.footer ul{
+    margin-left: 30px;
+}
+
+.footer a{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    color: gray;
+    text-decoration: none;
+}
+
+.footer h2{
+    font-size: 12pt;
+    font-family: Didot, "Didot LT STD", "Hoefler Text", Garamond, "Times New Roman", serif;
+}
+
+.footer p{
+    font-size: 10pt;
+    font-family: 'Montserrat', sans-serif;
+    color: gray;
+    text-align: left;
+}
+
+.footer img{
+    height: 20px;
+}
+
+.footer-margin-left{
+    display: flex;
+    flex-basis: 20%;
+    justify-content: flex-start;
+    /* background-color: gray; */
+}
+
+.footer-left{
+    flex-basis: 30%;
+    /* background-color: olivedrab; */
+}
+
+.footer-center{
+    flex-basis: 30%;
+    /* background-color:palegoldenrod; */
+}
+
+.footer-right{
+    flex-basis: 30%;
+    /* background-color: pink; */
+}
+
+.footer-right img{
+    margin-left: 150px;
+}
+
+/* .footer-margin-right{
+    display: flex;
+    flex-basis: 10%%;
+    justify-content: flex-end;
+    /* background-color:blue; 
+} */
+
+/* AQUÍ VA EL LOGIN */
+
+.form-popup {
+    display: none;
+    position: fixed;
+    top: 70px;
+    right: 15px;
+    border: 3px solid grey;
+    z-index: 9;
+    border-radius: 10px;
+}
+
+.form-container {
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.form-container input[type=text], .form-container input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+.form-container .btn {
+    background-color: pink;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+
+.form-container .cancel {
+    background-color: rgb(223, 223, 247); 
+}
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+@media only screen and (min-width: 1px) and (max-width: 700px)  {
+    header {
+    max-width: 400px;
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 701px) and (max-width: 1080px)  {
+    header {
+        max-width: 600px;
+    }
+}
+
+@media only screen and (min-width: 1081px) and (max-width: 5000px)  {
+    header {
+        max-width: 1100px;
+    }
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  .footer-section {
+    flex: 1 0 300px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-section h3 {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .logo-text {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .contact span {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .socials a {
+    color: #fff;
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .links ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links li {
+    margin-bottom: 10px;
+  }
+  
+  .links a {
+    color: #fff;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .contact-form .btn-primary {
+    background-color: #f60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  

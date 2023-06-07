@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<body>
+    <!-- AQUÍ COMIENZA EL CHECKOUT -->
+    <div class="contacto">
+        <div class="titulo">
+            <br>
+            <br>
+            <br>
+            <h1>CONTACTO</h1>
+        </div>
+        <div class="contacto2">
+            <div class="container">
+                <form action="http://localhost:4200/guardar-datos" method="POST">
+                    <label for="fname">Nombre</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Nombre..">
+                    <label for="lname">Apellidos</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Apellidos..">
+                    <label for="subject">Asunto</label>
+                    <textarea id="subject" name="subject" placeholder="Escribe algo.."
+                        style="height:200px"></textarea>
+                    <input type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- AQUÍ VA EL JAVASCRIPT -->
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+
+</html>

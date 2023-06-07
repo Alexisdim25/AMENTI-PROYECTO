@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+<head>
+     <title>WOMEN</title>
+</head>
+<body>
+    <!-- AQUÍ VAN LOS PRODUCTOS -->
+    <div class="margen"></div>
+    <div class="productos">
+        <div class="productos-columnas">
+            <div class="productos-columnas-margin-left"></div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="../../assets/imagenes/Amenti-Productos1.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="../../assets/imagenes/Amenti-Productos2.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="../../assets/imagenes/Amenti-Productos3.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Amenti-Productos4.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columnas-margin-right"></div>
+        </div>
+        <div class="productos-bottom"></div>
+    </div>
+    <div class="productos2">
+        <div class="productos-columnas">
+            <div class="productos-columnas-margin-left"></div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Amenti-Productos5.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text" (click)="addToCart(product)">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Amenti-Productos6.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Amenti-Productos7.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}.</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columna">
+                <div class="card" *ngFor="let product of products">
+                    <div class="contenedor-img">
+                        <img src="imagenes/Amenti-Productos8.png" alt="Pulseras" style="width:100%">
+                        <div class="overlay">
+                            <div class="text">{{ product.price }} MXN</div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <br>
+                        <h1>{{ product.name }}</h1>
+                        <br>
+                        <p>{{ product.description }}</p>
+                        <br>
+                        <button class="button2" (click)="addToCart(product)">Agregar a Carrito</button>
+                        <br>
+                    </div>
+                </div>
+            </div>
+            <div class="productos-columnas-margin-right"></div>
+        </div>
+        <div class="productos-bottom"></div>
+    </div>
+    <script>
+        function openForm() {
+            document.getElementById("myForm").style.display = "block";
+        }
+        
+        function closeForm() {
+            document.getElementById("myForm").style.display = "none";
+        }
+    </script>
+</body>
+</html>

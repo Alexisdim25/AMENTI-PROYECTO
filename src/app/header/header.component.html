@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <body>
+        <!-- AQUÍ VA EL MENÚ -->
+        <div class="barra-nav">
+            <div class="barra-nav-margin-left"></div>
+            <div class="barra-nav-left">
+                <ul>
+                    <li><a routerLink="/">HOME</a></li>
+                    <li><a routerLink="/products-women">MUJERES</a></li>
+                    <li><a routerLink="/products-men">HOMBRES</a></li>
+                </ul>
+            </div>
+            <div class="barra-nav-center">
+                <img src="../../assets/imagenes/Logo-Amenti-Negro.png" alt="Logo">
+            </div>
+            <div class="barra-nav-right">
+                <a (click)="toggleLoginPopup()"><img src="../../assets/imagenes/Icono-Contactos-Amenti.png" alt="Login"></a>
+                <ul>
+                    <li><a routerLink="/cart"><img src="../../assets/imagenes/Icono-Carrito-Amenti.png" alt="Carrito"></a>
+                    <li><a routerLink="/contact">CONTACTO</a></li>
+                </ul>
+            </div>
+            <div class="barra-nav-margin-right"></div>
+        </div>
+    </body>
+    <app-login-popup *ngIf="isLoginPopupVisible"></app-login-popup>
+</html>
